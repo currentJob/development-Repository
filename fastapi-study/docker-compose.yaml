@@ -1,0 +1,31 @@
+services:
+  backend: # 서비스 이름 (FastAPI 컨테이너)
+    build:
+      context: . # Dockerfile 위치 (현재 디렉토리)
+      dockerfile: ./BackEnd/Dockerfile # 사용할 Dockerfile 이름
+    ports:
+      - "8000:8000" # 호스트:컨테이너 포트 매핑
+    depends_on: # Django 컨테이너가 먼저 실행되도록 설정 (선택적)
+      - frontend
+    volumes: # 필요에 따라 볼륨 마운트 설정 (선택적)
+      - ./BackEnd:/app # 백엔드 코드 변경 시 컨테이너에 즉시 반영
+    networks:
+      - login-form  # backend 컨테이너를 login-form에 연결
+
+
+  frontend: # 서비스 이름 (Django 컨테이너)
+    build:
+      context: . # Dockerfile 위치 (현재 디렉토리)
+      dockerfile: ./FrontEnd/Dockerfile # 사용할 Dockerfile 이름
+    ports:
+      - "8080:8080" # 호스트:컨테이너 포트 매핑
+    volumes: # 필요에 따라 볼륨 마운트 설정 (선택적)
+      - ./FrontEnd/Django/loginForm:/app # 프론트엔드 코드 변경 시 컨테이너에 즉시 반영
+    environment: # Django 환경 변수 설정
+      - DJANGO_SETTINGS_MODULE=loginForm.settings
+    networks:
+      - login-form  # backend 컨테이너를 login-form에 연결
+
+networks:  # 네트워크 정의 섹션 추가
+  login-form:  # login-form 네트워크 정의 (별다른 설정이 필요 없다면 빈 설정으로 가능)
+    # driver: bridge # 필요에 따라 네트워크 드라이버 설정 (기본은 bridge)

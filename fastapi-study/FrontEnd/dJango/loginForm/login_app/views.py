@@ -12,7 +12,7 @@ def login_view(request):
             password = form.cleaned_data['password']
 
             # FastAPI 백엔드 URL
-            url = "http://127.0.0.1:8000/login"  # 실제 백엔드 URL로 변경
+            url = "http://backend:8000/login"  # 실제 백엔드 URL로 변경
 
             # 요청 데이터
             data = {"id": username, "pw": password}  # 백엔드에 맞게 수정
