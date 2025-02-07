@@ -42,7 +42,7 @@ INSTALLED_APPS = [
 
 - `my_app` 디렉토리 안에 `templates` 디렉토리 생성
 - `templates` 디렉토리 안에 `my_app` 디렉토리를 하나 더 생성
-- `my_app/templates/my_app` 디렉토리에 `login.html` 파일을 생성하고 다음 내용을 작성
+- `my_app/templates/my_app` 디렉토리에 `login.html`과 `home.html` 파일을 생성하고 다음 내용을 작성
 
 - `login.html`
 ``` HTML
