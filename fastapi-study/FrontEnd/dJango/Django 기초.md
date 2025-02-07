@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 - `templates` 디렉토리 안에 `my_app` 디렉토리를 하나 더 생성
 - `my_app/templates/my_app` 디렉토리에 `login.html` 파일을 생성하고 다음 내용을 작성
 
+- `login.html`
 ``` HTML
 <form method="post">
 	{% csrf_token %}
@@ -58,6 +59,15 @@ INSTALLED_APPS = [
 		</ul>
 	{% endif %}
 </form>
+```
+
+- `home.html`
+``` HTML
+<h1>안녕하세요, {{ username }}님!</h1>
+
+<p>로그인에 성공하셨습니다.</p>
+
+<a href="/logout/">로그아웃</a>
 ```
 
 #### 5.  폼 파일 생성
@@ -144,6 +154,7 @@ app_name = 'my_app'  # namespacing 추가
 
 urlpatterns = [
     path('login/', views.login_view, name='login'),
+    path('home/', views.home_view, name='home'),
 ]
 ```
 
