@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  tensorrt:
+    image: tensorrt-22.12  # Dockerfile로 빌드한 이미지 이름
+    build:
+      context: .           # Dockerfile이 있는 디렉토리
+      dockerfile: Dockerfile
+    runtime: nvidia        # GPU 사용 설정
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    volumes:
+      - .:/workspace       # 현재 디렉토리를 컨테이너의 /workspace로 마운트
+    working_dir: /workspace
+    shm_size: 16g          # 공유 메모리 크기 설정
+    stdin_open: true       # 컨테이너 내 bash 사용 가능하게
+    tty: true

@@ -71,3 +71,10 @@ results/
 *.env
 *.ini
 *.cfg
+
+# Dataset files
+data/
+img/
+*.jpg
+*.jpeg
+*.png
