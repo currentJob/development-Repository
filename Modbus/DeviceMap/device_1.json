@@ -1,0 +1,122 @@
+[
+  {
+    "Addr": 1,
+    "Detail": "장비 전원 상태 (On/Off)",
+    "Word": 1,
+    "Scale": 1,
+    "Unit": "",
+    "Value": 1
+  },
+  {
+    "Addr": 2,
+    "Detail": "펌프 작동 상태",
+    "Word": 1,
+    "Scale": 1,
+    "Unit": "",
+    "Value": 0
+  },
+  {
+    "Addr": 3,
+    "Detail": "경고 LED 상태",
+    "Word": 1,
+    "Scale": 1,
+    "Unit": "",
+    "Value": 0
+  },
+  {
+    "Addr": 4,
+    "Detail": "원격 제어 허용",
+    "Word": 1,
+    "Scale": 1,
+    "Unit": "",
+    "Value": 1
+  },
+  {
+    "Addr": 10001,
+    "Detail": "비상 정지 버튼 상태",
+    "Word": 1,
+    "Scale": 1,
+    "Unit": "",
+    "Value": 1
+  },
+  {
+    "Addr": 10002,
+    "Detail": "수위 센서 알람 상태",
+    "Word": 1,
+    "Scale": 1,
+    "Unit": "",
+    "Value": 0
+  },
+  {
+    "Addr": 10003,
+    "Detail": "문 열림 감지",
+    "Word": 1,
+    "Scale": 1,
+    "Unit": "",
+    "Value": 0
+  },
+  {
+    "Addr": 30001,
+    "Detail": "현재 온도 (0.1°C 단위)",
+    "Word": 1,
+    "Scale": 1,
+    "Unit": "°C",
+    "Value": 1
+  },
+  {
+    "Addr": 30002,
+    "Detail": "현재 습도 (% 단위)",
+    "Word": 1,
+    "Scale": 1,
+    "Unit": "%",
+    "Value": 0
+  },
+  {
+    "Addr": 30003,
+    "Detail": "전압 (0.1V 단위)",
+    "Word": 1,
+    "Scale": 0.1,
+    "Unit": "V",
+    "Value": 0
+  },
+  {
+    "Addr": 40001,
+    "Detail": "온도 설정값 (0.1°C 단위)",
+    "Word": 1,
+    "Scale": 0.1,
+    "Unit": "°C",
+    "Value": 100
+  },
+  {
+    "Addr": 40002,
+    "Detail": "습도 설정값",
+    "Word": 1,
+    "Scale": 0.1,
+    "Unit": "",
+    "Value": 122
+  },
+  {
+    "Addr": 40003,
+    "Detail": "장비 운전 모드 (0: 수동, 1: 자동)",
+    "Word": 1,
+    "Scale": 1,
+    "Unit": "",
+    "Value": 1
+  },
+  {
+    "Addr": 40004,
+    "Detail": "펌프 타이머 (초 단위)",
+    "Word": 1,
+    "Scale": 1,
+    "Unit": "s",
+    "Value": 1
+  },
+  {
+    "Addr": 40006,
+    "Detail": "오류 코드 (0: 정상)",
+    "Word": 1,
+    "Scale": 1,
+    "Unit": "",
+    "Value": 0
+  }
+]

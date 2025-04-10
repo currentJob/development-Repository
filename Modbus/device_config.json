@@ -1,8 +1,14 @@
 {
-    "device_1": {
-      "ip": "172.20.20.22",
-      "port": 502,
-      "unit_id": 1
-    }
+  "device_1": {
+    "ip": "localhost",
+    "port": 5020,
+    "unit_id": 1,
+    "data_map": "DeviceMap/device_1.json"
+  },
+  "device_2": {
+    "ip": "localhost",
+    "port": 5021,
+    "unit_id": 1,
+    "data_map": "DeviceMap/device_2.json"
   }
-  
+}
