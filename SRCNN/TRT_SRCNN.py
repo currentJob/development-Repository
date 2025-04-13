@@ -133,8 +133,6 @@ UPSCALE_FACTOR = 4
 BATCH_SIZE = 8
 EPOCHS = 10
 
-roi = (50, 50, 128, 128)  # 예시 값: (x, y, w, h)
-
 if __name__ == "__main__":
     train_img_path = "img"
 
