@@ -64,6 +64,7 @@ results/
 *.pt
 *.pth
 *.onnx
+*.plan
 *.h5
 *.ckpt
 
