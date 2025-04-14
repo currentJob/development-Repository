@@ -125,8 +125,8 @@ def upscale_image(image_path, model_path):
     sr = np.clip(sr * 255.0, 0, 255).astype(np.uint8)
     
     basename, ext = os.path.splitext(os.path.basename(image_path))
-    cv2.imwrite(f"{basename}_up.{ext}", cv2.cvtColor(lr_up, cv2.COLOR_RGB2BGR))
-    cv2.imwrite(f"{basename}_sr.{ext}", cv2.cvtColor(sr, cv2.COLOR_RGB2BGR))
+    cv2.imwrite(f"{basename}_up{ext}", cv2.cvtColor(lr_up, cv2.COLOR_RGB2BGR))
+    cv2.imwrite(f"{basename}_sr{ext}", cv2.cvtColor(sr, cv2.COLOR_RGB2BGR))
 
 FIXED_SIZE = (1024, 1024)
 UPSCALE_FACTOR = 4

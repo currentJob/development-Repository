@@ -22,6 +22,7 @@ RUN pip install --upgrade pip && \
     matplotlib \
     tqdm \
     onnx \
+    tf2onnx \
     tensorflow \
     onnxruntime \
     scikit-image
