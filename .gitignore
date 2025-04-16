@@ -67,6 +67,8 @@ results/
 *.plan
 *.h5
 *.ckpt
+models/
+model/
 
 # Optional: environment configuration
 *.env
