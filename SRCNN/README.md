@@ -21,14 +21,14 @@ Python 기반의 이미지 초해상화(Super-Resolution)를 위한 환경 구�
 
 ## 실행 방법
 
-### ✅ 학습 및 추론 실행  
-- **기본 실험 (노트북)**: `SRCNN.ipynb` 실행  
-- **TF-TRT 기반 추론**: `TRT_SRCNN.py`에서 `model_train`, `model_convert`, `upscale_image` 함수 호출  
-- **ONNX → TensorRT 기반 추론**: `ONNX_TRT_SRCNN.py`에서 `model_train`, `model_convert_to_onnx`, `convert_onnx_to_tensorrt`, `upscale_image_tensorrt` 함수 호출
+### ✅ 모델 학습 및 추론 
+- **SRCNN.ipynb**: 기본 모델
+- **TRT_SRCNN.py**: TF-TRT 기반 추론
+- **ONNX_TRT_SRCNN.py**: ONNX → TensorRT 기반 추론
 
 ---
 
-### ✅ Docker 기반 실행
+### ✅ Docker 실행
 
 #### 1. Docker 환경 실행
 ```bash
