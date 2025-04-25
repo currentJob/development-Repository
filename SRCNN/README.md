@@ -1,4 +1,4 @@
-# 이미지 초해상화 테스트용 SRCNN 시스템
+# 이미지 초해상화 SRCNN 구현
 
 ## 개요  
 Python 기반의 이미지 초해상화(Super-Resolution)를 위한 환경 구축
